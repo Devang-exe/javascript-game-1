@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenges</title>
+</head>
+
+<body>
+    <div class = "container-6">
+        <h2>Challenge-1: DATE AND TIME </h2>
+        <div class="flex-box-date" id="flex-box-date-div">
+            <button class="btn btn-success" onclick="document.getElementById('demo').innerHTML = Date()"> Click me to display Date and Time.</button>
+        </div>
+        <p id="demo"></p>
+    </div>
+
+    <div class="container-1">
+
+        <h2>Challenge-2 Your age in days</h2>
+
+        <div class="flex-box-container-1">
+
+            <div>
+
+                <button class="btn btn-primary" onclick="AgeinDays()"> click me </button>
+
+            </div>
+
+            <div>
+
+                <button class="btn btn-danger" onclick="reset1()"> reset </button>
+
+            </div>
+
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result1"> </div>
+            <div id="flex-box-result2"> </div>
+        </div>
+
+    </div>
+
+    <div class="container-2">
+
+        <h2>Challenge-3 Cat Generator</h2>
+
+        <div class="flex-box-container-2">
+
+            <div>
+
+                <button class="btn btn-success" onclick="generateCat()"> generate cat </button>
+
+            </div>
+
+        </div>
+        <div class="flex-box-container-2" id="flex-cat-gen">
+            
+        </div>
+
+    </div>
+
+    <div class = "container-3">
+        <h2>Challenge-4: Rock Paper Scissor</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="C:\Users\GUPTA\OneDrive\Desktop\static\rock.png" height="150" width="150" onclick="rpsGame(this)">
+            <img id="paper" src="C:\Users\GUPTA\OneDrive\Desktop\static\paper.png" height="150" width="150" onclick="rpsGame(this)">
+            <img id="scissors" src="C:\Users\GUPTA\OneDrive\Desktop\static\scissor.png" height="150" width="150" onclick="rpsGame(this)">
+        </div>
+    </div>
+
+    <div class = "container-4">
+        <h2 id="Change-my-color">Challenge-5: change the color of all buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttoncolorchange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+
+                </select>
+                
+            </form>
+
+            <button class="btn btn-primary"><a href="https://web.whatsapp.com" style="color: white" target="_blank">Whatsapp Web!</a></button>
+            <button class="btn btn-danger"><a href="https://classroom.google.com" style="color: white" target="_blank">Google Classroom!</a></button>
+            <button class="btn btn-warning"><a href="http://www.google.com" style="color: white" target="_blank">Google!</a></button>
+            <button class="btn btn-success"><a href="https://www.facebook.com" style="color: white" target="_blank">facebook!</a></button>
+            <button ><a href="https://www.gmail.com"  style="color: white;  background-color: black;" target="_blank">Gmail!</a> </button>
+
+        </div>
+    </div>
+
+    <div class = "container-5">
+        <h2>Challenge-6: BlackJack </h2>
+        <h3><span id="blackjack-result"> Let's Play </span></h3>
+         
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div id="your-box">
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">HIT</button>
+                <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">STAND</button>
+                <button class="btn-lg btn-danger mr-2" id="blackjack-deal-button">DEAL</button>
+
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>WINS</th>
+                    <th>LOSSES</th>
+                    <th>DRAWS</th>
+                </tr>
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>    
+
+            </table>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

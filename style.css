@@ -1,0 +1,76 @@
+.container-1, .container-2,.container-3, 
+ .container-4, .container-5, .container-6 {
+
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2{
+    background-color: darkgreen;
+    color: #ffffff;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex-box-container-1 , .flex-box-container-2, .flex-box-rps,.flex-box-pick-color, 
+.flex-blackjack-row-1,.flex-blackjack-row-2, .flex-blackjack-row-3,.flex-box-date{
+    display: flex;
+    
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+
+}
+
+
+
+table,th,td{
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.flex-blackjack-row-1 div{
+
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    height: 400px;
+    flex-wrap: wrap;
+
+}
+
+.flex-blackjack-row-1 img{
+    width: 25%;
+    padding: 10px;
+}
+
+.flex-box-container-2 div{
+    display: flex;
+    margin: 10px;
+}
+
+.flex-box-contaimer-2 img{
+    margin: 10px;
+    box-shadow: 0px 10px 50px black;
+
+}
+
+.flex-box-rps img:hover{
+    box-shadow: 0px 10px 100px blue;
+}
+
+.container-4 button a{
+    text-emphasis-color: white;
+}
+
+#demo{
+    font-size: large;
+    font-weight: bold;
+
+}
